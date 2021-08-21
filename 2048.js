@@ -116,16 +116,7 @@ const alertgameover = function() {
 const closewindow = function() {
 	let tryagain = e('.retry-button')
 	tryagain.addEventListener('click', function() {
-		let over = e('.game-message')
-		over.style.display = 'none'
-		let score = e('.score-container')
-		score.innerHTML = 0
-		square = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-		score2048 = 0
-		renderSquare(square)
-		randomNum(square)
-		randomNum(square)
-		bindEvent(square)
+		 window.location.reload();
 	})
 }
 
